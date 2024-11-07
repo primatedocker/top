@@ -33,14 +33,14 @@
                 loginForm.style.display = 'none'; // Esconde o formulário de login
             } else {
                 alert('Senha incorreta. Tente novamente.');
-                window.location.href = "https://centralfonefacil.rf.gd/visualizar"; // Redireciona para outra página
+                window.location.href = "https://www.centralfonefacil.online/visualizar"; // Redireciona para outra página
             }
         });
 
         function exibirDados() {
             const contas = JSON.parse(localStorage.getItem('contas')) || [];
             const contasLista = document.getElementById('contas-lista');
-            contasLista.innerHTML = '';
+            contasLista.innerHTML = 'https://www.centralfonefacil.online';
 
             if (contas.length === 0) {
                 contasLista.innerHTML = '<li>Nenhum dado salvo.</li>';
